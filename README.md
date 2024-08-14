@@ -102,7 +102,7 @@
 <ul>
     <li>Kullanıcı Kimlik Doğrulama: Uygulamaya güvenli erişim sağlamak için bir giriş sayfası eklenecek.</li>
     <li>Rol Tabanlı Erişim: Yöneticiler ve Kullanıcılar için özel sayfalar oluşturulacak ve her role özel işlevler sunulacak.</li>
-    <li>Threading Uygulaması: Performansı artırmak ve eşzamanlı işlemleri verimli bir şekilde yönetmek için uygulamaya threading (iş parçacığı) desteği eklenecek.</li>
+    <li>Thread Geliştirmesi: Performansı artırmak ve eşzamanlı işlemleri verimli bir şekilde yönetmek için uygulamaya threading (iş parçacığı) desteği eklenecek.</li>
     <li><strong>Gelişmiş Nesne Yönelimli Tasarım</strong>: Kalıtım, kodun yeniden kullanılabilirliğini artırmak ve ölçeklenebilir, temiz bir mimariyi sürdürmek için kullanılacaktır.</li>
 </ul>
 <br><br><br><br>
