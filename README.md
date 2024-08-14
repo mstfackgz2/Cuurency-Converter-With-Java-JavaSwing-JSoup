@@ -44,6 +44,11 @@
 
 ![output_gif](https://github.com/user-attachments/assets/63cba09f-9748-497b-8af1-79e8623a9db9)
 
+<h2>Future Updates</h2>
 
-
-
+<ul>
+    <li>User Authentication: A login page will be added to provide secure access to the application.</li>
+    <li>Role-Based Access: Dedicated pages will be created for Admins and Users, offering tailored functionalities for each role.</li>
+    <li>Threading Implementation: The application will incorporate threading to improve performance and handle concurrent processes efficiently.</li>
+    <li>Role-Based Access: Dedicated pages will be created for Admins and Users, offering tailored functionalities for each role.</li>
+<ul>
