@@ -5,8 +5,10 @@
         <group>
             <file>file:/C:/Users/musta/Documents/NetBeansProjects/CurrencyConverter/src/currencyconverter/CurrencyConverter.java</file>
             <file>file:/C:/Users/musta/Documents/NetBeansProjects/CurrencyConverter/src/currencyconverter/fetchers/CurrencyFetcher.java</file>
+            <file>file:/C:/Users/musta/Documents/NetBeansProjects/CurrencyConverter/src/currencyconverter/db/DbHelper.java</file>
             <file>file:/C:/Users/musta/Documents/NetBeansProjects/CurrencyConverter/src/currencyconverter/ui/MainFrame.java</file>
             <file>file:/C:/Users/musta/Documents/NetBeansProjects/CurrencyConverter/src/currencyconverter/entityDal/CurrencyDal.java</file>
+            <file>file:/C:/Users/musta/Documents/NetBeansProjects/CurrencyConverter/src/currencyconverter/entity/Currency.java</file>
             <file>file:/C:/Users/musta/Documents/NetBeansProjects/CurrencyConverter/src/currencyconverter/uiController/MainPageController.java</file>
         </group>
     </open-files>

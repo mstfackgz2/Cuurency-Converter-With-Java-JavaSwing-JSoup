@@ -2,13 +2,14 @@
 package currencyconverter.entityDal;
 
 import currencyconverter.db.DbHelper;
+import currencyconverter.interfaces.ICurrencyDal;
 import java.math.BigDecimal;
 import java.sql.*;
 import java.util.ArrayList;
 
 
 
-public class CurrencyDal {
+public class CurrencyDal implements ICurrencyDal {
 
     Connection connection = null;
     DbHelper helper = new DbHelper();
@@ -17,6 +18,7 @@ public class CurrencyDal {
     ResultSet resultSet;
     
     
+    @Override
     public void updatePrice(String currencyCode, BigDecimal newPrice) throws SQLException{
         //update
         try {
@@ -33,9 +35,9 @@ public class CurrencyDal {
             preStatement.close();
             connection.close();
         }
-//update
     }
     
+    @Override
     public ArrayList<String> getCurrencyCodes() throws SQLException{
         ArrayList<String> codes = new ArrayList<String>();
         
@@ -61,6 +63,9 @@ public class CurrencyDal {
         return codes;
     }   
     
+    
+    
+    @Override
     public ResultSet getAllCurrencies() throws SQLException{
         
         try {
@@ -77,7 +82,8 @@ public class CurrencyDal {
     }
     
 
-public BigDecimal getConvertCurrencies(String code1, String code2) throws SQLException {
+    @Override
+    public BigDecimal getConvertCurrencies(String code1, String code2) throws SQLException {
     BigDecimal value = BigDecimal.ZERO;
     Connection connection = null;
     PreparedStatement preStatement = null;

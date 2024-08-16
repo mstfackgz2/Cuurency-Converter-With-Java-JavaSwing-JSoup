@@ -25,7 +25,7 @@ public class MainPageController {
     public MainPageController(){
            
     }
-    // dont use db here 
+    // bool degerler ile overload et!!
    public void fillTheTable(DefaultTableModel model, boolean money, boolean crypto) throws SQLException {
     rs = cd.getAllCurrencies();
     model.setRowCount(0);
@@ -53,6 +53,9 @@ public class MainPageController {
         rs.close();
     }
 }
+   
+   
+   
     public void fillComboBox(JComboBox<String> converter_ComboBoxMain) throws SQLException {
         ArrayList<String> codes = cd.getCurrencyCodes();
         converter_ComboBoxMain.removeAllItems();
@@ -67,19 +70,19 @@ public class MainPageController {
         BigDecimal countDecimal = new BigDecimal(count);
          BigDecimal conversionRate = cd.getConvertCurrencies(code1, code2);
          BigDecimal price = conversionRate.multiply(countDecimal);
-         converter_LabelResult.setText(price.toString());
+         converter_LabelResult.setText(count + " " + code1 + " = " +price.toString()+ " " +code2);
     }
     
     
    public void setRealValueAll() throws SQLException{
        ArrayList<String> allCodes = cd.getCurrencyCodes();
        CurrencyFetcher cf = new CurrencyFetcher();
-       BigDecimal updatePrice = BigDecimal.ZERO;
+       BigDecimal newPrice = BigDecimal.ZERO;
        
        try {
             for(String code : allCodes){
-            updatePrice = cf.converter(code, "usd");
-            cd.updatePrice(code, updatePrice);
+            newPrice = cf.converter(code, "usd");
+            cd.updatePrice(code, newPrice);
        }
        } catch (SQLException e) {
                    JOptionPane.showMessageDialog(new JFrame(), e);
